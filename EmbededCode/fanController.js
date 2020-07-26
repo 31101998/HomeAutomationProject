@@ -115,7 +115,7 @@
 
 	const getvalue = ()=>{         
         var xhr = new XMLHttpRequest();
-        var url = "http://192.168.43.37:80/Get_Data";
+        var url = "http://"+context.ipAddress2 +"/Get_Data";
         xhr.open("POST", url, true);
         xhr.onreadystatechange = function() {
 			if(this.status == 200 && this.readyState == 4)
