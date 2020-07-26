@@ -7,8 +7,8 @@ float passval;
 int IRSensor = 2; // connect ir sensor to arduino pin 2
 
 /* Set these to your desired credentials. */
-const char *ssid = "Owl"; //Enter your WIFI ssid
-const char *password = "Mahad3vP@rsekar"; //Enter your WIFI password
+const char *ssid = ""; //Enter your WIFI ssid
+const char *password = ""; //Enter your WIFI password
 ESP8266WebServer server(80);
 void handleRoot()   {
 server.send(200, "text/html", "<form action=\"/LED_BUILTIN_on\" method=\"get\" id=\"form1\"></form><button type=\"submit\" form=\"form1\" value=\"On\">Bulb_On</button><form action=\"/LED_BUILTIN_off\" method=\"get\" id=\"form2\"></form><button type=\"submit\" form=\"form2\" value=\"Off\">Bulb_Off</button><form action=\"/LED_off\" method=\"get\" id=\"form3\"></form><button type=\"submit\" form=\"form3\" value=\"Off\">Fan_Off</button><form action=\"/LED_on_LOW\" method=\"get\" id=\"form4\"></form><button type=\"submit\" form=\"form4\" value=\"On\">Fan_Low</button><form action=\"/LED_on_MED\" method=\"get\" id=\"form5\"></form><button type=\"submit\" form=\"form5\" value=\"On\">Fan_Med</button><form action=\"/LED_on_HIGH\" method=\"get\" id=\"form6\"></form><button type=\"submit\" form=\"form6\" value=\"On\">Fan_High</button>");
