@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400&display=swap');
+small{
+    color: rgb(135, 206, 235) ;
+}
+body{
+    font-family: 'MuseoModerno', cursive;
+
+}
+h3{
+    color: rgb(135, 206, 235);
+    text-shadow: 1px -1px 4px #e2f7ffc4;
+}
+#LedController{
+    width: 100%;
+    margin: auto;
+}
